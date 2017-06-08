@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>  
+
+<head>  
+
+<title>九九乘法表</title>  
+
+ <script>
+
+function Myfunction()
+{
+    var a = document.getElementById("DARK").value;
+
+    var b = Number(a);
+
+    for (var i = 1; i <= b; i++)
+
+  {  
+ 
+        for (var j = 1; j <= i; j++)
+
+         {
+
+            document.write(" " + j + "x" + i + "=" + j * i + " ");
+
+         }
+
+        document.write("<br>");
+    }
+
+}      
+
+</script>   
+
+</head>  
+
+<body>
+
+<h1> <strong>在文本框中输乘法表 <big> 阶数 </big> </h1>
+
+<input type="text" id="DARK">
+
+<input type="button" value="提交" onclick="Myfunction()">
+
+</body>  
+
+</html>  
+
